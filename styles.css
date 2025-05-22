@@ -1,0 +1,28 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centra el contenido */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Estilo de la imagen */
+.fotoPerfil {
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px; /* Ajusta la altura de la imagen para que sea proporcional */
+    object-fit: cover; /* Mantiene la imagen centrada y recortada si es necesario */
+    margin-top: 20px; /* Agrega un poco de espacio arriba de la imagen */
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 15px;
+}
