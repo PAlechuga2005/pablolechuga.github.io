@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de que la ruta sea correcta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículum Vitae - Pablo Andrés Lechuga Pérez</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js"></script>
 </head>
-<body>
-    <h1>Portafolio de Pablo Lechuga</h1>
-    <img src="./images/unnamed.jpg" class="fotoPerfil">
-    <p>Hola este es mi Laboratorio 4 de estructuras de datos, Lechuga mula,  y es mi portafolio en una pagina web</p>
+<body class="bg-custom text-custom">
+  <!-- Botón de cambio de modo -->
+    <button onclick="toggleDarkMode()" class="fixed top-4 right-4 p-2 rounded-lg dark-mode-button shadow-lg">
+      <span class="dark-mode-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      </span>
+    </button>
+
+    <!-- Contenedor principal -->
+  <div class="max-w-3xl mx-auto p-6 bg-custom shadow-lg rounded-lg mt-8 main-container">
+    <!-- Encabezado -->
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold">Pablo Andrés Lechuga Pérez</h1>
+      <p class="text-lg text-custom">Estudiante de ingenieria en sistemas de 19 años</p>
+      <img src="img\Gay.jpg" alt="Hombre mamado y guapo en traje" class="imagen-gay">
+    </header>
+
+    <!-- Sección: Información de Contacto -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Contacto</h2>
+      <ul class="space-y-1">
+        <li><strong>Email:</strong> <a href="mailto:palechuga@correo.url.edu.gt" class="text-blue-600 hover:underline">palechuga@correo.url.edu.gt</a></li>
+        <li><strong>Teléfono:</strong> +502 5998-3200</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/PAlechuga2005" class="text-blue-600 hover:underline">github.com/PAlechuga2005</a></li>
+        <li><strong>Instagram para las beibis:</strong> <a href="https://www.instagram.com/pablol_perez?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-blue-600 hover:underline">instagram.com/pablol_perez</a></li>
+      </ul>
+    </section>
+
+    <!-- Sección: Experiencia -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Experiencia Laboral</h2>
+      <p class="centered text-custom">De junio a noviembre del 2024 desempeñe el puesto como Asesor de Ventas en Cemaco Peri Roosevelt. Atendiendo las dudas de los clientes que
+        visitaban, dando a conocer las ventajas del producto que ellos desean adquirir, dándoles un seguimiento hasta que adquieren el producto
+        deseado. Luego de noviembre del 2024 hasta la fecha desempeño el rol de agente de multimedia en Banco Industrial, el cual mi deber es apoyar 
+        a los clientes que se comuniquen con consultas acerca de Bi en línea, como reinicio de contraseñas, cambio de número de teléfono, brindar 
+        credenciales entre otras consultas.</p>
+    </section>
+
+    <!-- Sección: Formacion Academica -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Formacion Academica</h2>
+      <p class="centered text-custom">Universidad Rafael Landívar cursando el tercer semestre en la carrera de Ingeniera en informática y sistemas </p>
+    </section>
+
+    <!-- Sección: Habilidades Personales -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Habilidades Personales</h2>
+      <p class="centered text-custom">Poseo buenas relaciones interpersonales. He liderado equipos de trabajo en mis años de estudio, así como en voluntariados que me ha tocado dirigir en la fundación Techo</p>
+    </section>
+
+    <!-- Sección: Habilidades -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Habilidades</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <span class="inline-block px-3 py-1 rounded-full habilidad-container">HTML</span>
+        <span class="inline-block px-3 py-1 rounded-full habilidad-container">CSS</span>
+        <span class="inline-block px-3 py-1 rounded-full habilidad-container">JavaScript</span>
+        <span class="inline-block px-3 py-1 rounded-full habilidad-container">C#</span>
+        <span class="inline-block px-3 py-1 rounded-full habilidad-container">Java</span>
+        <span class="inline-block px-3 py-1 rounded-full habilidad-container">C++</span>
+      </div>
+    </section>
+
+    <!-- Sección: Idiomas -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Idiomas</h2>
+      <ul class="space-y-1">
+        <li>Español (nativo)</li>
+        <li>Inglés (intermedio)</li>
+      </ul>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="text-custom text-sm mt-8">
+      &copy; 2025 Pablo Lechuga. Todos los derechos reservados.
+    </footer>
+  </div>
 </body>
 </html>
